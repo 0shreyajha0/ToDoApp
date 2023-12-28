@@ -1,11 +1,38 @@
-.header {
+.Header {
+  width: ;
+  height: calc(100vh / 6);
+  background-color: #333;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 100%;
 }
 
-.header .container {
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
-.header .logo {
+.logoImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
-.header .logo-img {
+.sync-now {
+  background-color: #ff9900;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sync-now:hover {
+  background-color: #cc5c00;
 }

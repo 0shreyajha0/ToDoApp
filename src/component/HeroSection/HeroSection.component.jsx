@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroSection.module.css";
 
-const Herosection = () => {
+const HeroSection = () => {
   return (
     <section class="new-todo">
       <h1>Add your task here</h1>

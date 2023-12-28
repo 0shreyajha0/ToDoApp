@@ -1,29 +1,21 @@
 import React from "react";
-import "./Header.module.css";
+import styles from "./Header.module.css";
+import todologo from "../../Assets/images/todologo.png";
 
 const Header = () => {
   return (
-    <section class="header">
-      <div class="container">
-        <div class="logo">
-          <img
-            src="/home/shreya/to-do-app/public/todologo.png"
-            alt="ToDo-logo"
-            class="logo-img"
-          ></img>
-          <h1>Todo List</h1>
-        </div>
-        <nav>
-          <ul>
-            <button id="sync-now-btn" class="sync-now">
-              <p id="sync-now-p">
-                Sync now <i id="sync-spinner" class=""></i>
-              </p>
-            </button>
-          </ul>
-        </nav>
+    <header className={styles.Header}>
+      <div className={styles.logo}>
+        <img
+          src={todologo}
+          alt="Logo for ToDo List"
+          className={styles.logoImg}
+        />
+        <h1>Todo List</h1>
       </div>
-    </section>
+      <button className={styles["sync-now"]}>Sync now</button>
+    </header>
   );
 };
+
 export default Header;
