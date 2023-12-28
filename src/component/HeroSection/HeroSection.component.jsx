@@ -1,42 +1,44 @@
 import React from "react";
-import "./HeroSection.module.css";
+import styles from "./HeroSection.module.css";
 
 const HeroSection = () => {
   return (
-    <section class="new-todo">
-      <h1>Add your task here</h1>
-      <div class="new-todo-hoc">
-        <div class="container">
-          <form class="todo-form">
+    <section className={styles.hero}>
+      <div className={styles.containerLeft}>
+        <div className={styles.innerContainer}>
+          <form className={styles.form}>
             <input
-              class="todo-title"
-              autocomplete="off"
+              className={styles.inputTitle}
+              autoComplete="off"
               type="text"
               id="todo-title"
               name="todoTitle"
               placeholder="Your Title.."
             />
             <textarea
-              class="todo-content"
+              className={styles.inputContent}
               id="todo-content"
               name="todoContent"
               placeholder="Write something.."
             ></textarea>
             <input
-              class="submit-btn"
+              className={styles.submitBtn}
               id="submit-btn"
               type="submit"
               value="Submit"
             />
           </form>
         </div>
+      </div>
+      <div className={styles.containerRight}>
         <img
-          class="new-todo-img"
-          src="/images/undraw_online_organizer_ofxm.svg"
-          alt="Add new todo section"
+          className={styles.image}
+          src="/images/your_image.jpg"
+          alt="Visual representation"
         />
       </div>
     </section>
   );
 };
+
 export default HeroSection;

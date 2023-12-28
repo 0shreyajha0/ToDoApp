@@ -1,0 +1,87 @@
+/* HeroSection.module.css */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #333333d8;
+  color: white;
+}
+
+.containerLeft,
+.containerRight {
+  width: 50%;
+  height: 450px;
+  box-sizing: border-box;
+}
+
+.containerRight {
+  background-color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.innerContainer {
+  padding: 40px;
+  background-color: #444;
+  border: 5px solid #cccccc;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%; /* Take full height of parent */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.inputTitle,
+.inputContent {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #ccccccb9;
+  border: 5px solid #cccccc;
+  border-radius: 4px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+}
+
+.inputTitle {
+  width: 100%;
+}
+
+.inputContent {
+  width: 100%;
+  height: 150px;
+}
+
+.submitBtn {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: calc(100% / 3);
+  box-sizing: border-box;
+}
+
+.submitBtn:hover {
+  background-color: #0056b3;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
