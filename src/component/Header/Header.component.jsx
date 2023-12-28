@@ -1,7 +1,7 @@
 import React from "react";
-import "./Footer.module.css";
+import "./Header.module.css";
 
-export const Header = () => {
+const Header = () => {
   return (
     <section class="header">
       <div class="container">
@@ -26,3 +26,4 @@ export const Header = () => {
     </section>
   );
 };
+export default Header;

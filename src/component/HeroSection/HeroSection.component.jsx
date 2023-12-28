@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroSection.module.css";
 
-export const Header = () => {
+const Herosection = () => {
   return (
     <section class="new-todo">
       <h1>Add your task here</h1>
@@ -39,3 +39,4 @@ export const Header = () => {
     </section>
   );
 };
+export default HeroSection;
