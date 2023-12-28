@@ -1,12 +1,16 @@
 import React from "react";
-import { Header } from "./components/Header/Header.component";
+import Header from "./components/Header";
+import HeroSection from "/component/HeroSection";
+import Footer from "/component/Footer";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header /> {}
+      <HeroSection /> {}
+      <Footer /> {}
     </div>
   );
-}
+};
 
 export default App;

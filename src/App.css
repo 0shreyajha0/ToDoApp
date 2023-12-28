@@ -1,4 +1,18 @@
+:root {
+  --primarycolor: #18191a;
+  --secondrycolor: #18191a;
+  --deftextcolor: #f5f6f7;
+  --light-text: #ebececd8;
+  --color-blue: #6c63ff;
+  --light-grey: #282828;
+}
+
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primarycolor);
 }
