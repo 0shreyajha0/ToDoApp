@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./component/Header";
 import HeroSection from "./component/HeroSection";
+import MainSection from "./component/MainSection";
 import Footer from "./component/Footer";
 
-const App = () => {
+function App() {
   return (
     <div className="App">
-      <Header /> {}
-      <HeroSection /> {}
-      <Footer /> {}
+      <Header />
+      <HeroSection />
+      <MainSection />
+      <Footer />
     </div>
   );
-};
+}
 
 export default App;

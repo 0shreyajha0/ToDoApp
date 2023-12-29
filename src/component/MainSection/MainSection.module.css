@@ -1,0 +1,40 @@
+.mainSection {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-top: 50px;
+  height: auto;
+  padding-bottom: 30px;
+  color: #333;
+}
+
+.mainContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.todoText {
+  text-align: center;
+}
+
+.todoContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  overflow-y: auto;
+}
+
+.todoContainer h2 {
+  margin-bottom: 10px;
+}
+
+.todoContainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todoContainer li {
+  margin-bottom: 8px;
+}
