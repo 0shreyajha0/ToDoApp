@@ -84,7 +84,7 @@
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .containerLeft,
   .containerRight {
     width: 100%;
