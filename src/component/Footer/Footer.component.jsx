@@ -1,8 +1,23 @@
 import React from "react";
-import "./Footer.module.css";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
-  return <section></section>;
+  return (
+    <footer className={styles.Footer}>
+      <div className={styles.container}>
+        <p className={styles.footerText}>
+          <b>
+            Made with{" "}
+            <span role="img" aria-label="heart">
+              ❤️
+            </span>{" "}
+            To-Do App
+          </b>
+          .
+        </p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

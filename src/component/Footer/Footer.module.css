@@ -1,11 +1,17 @@
-.header {
+.Footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.header .container {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header .logo {
-}
-
-.header .logo-img {
+.footerText {
+  font-size: 16px;
+  line-height: 1.5;
 }
