@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import styles from "./HeroSection.module.css";
+import styles from "./ContentSection.module.css";
 
-const HeroSection = () => {
+const ContentSection = () => {
   // const [newTodo, setNewTodo] = useState({ title: "", content: "" });
 
   // useEffect(() => {
@@ -52,4 +52,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default ContentSection;
