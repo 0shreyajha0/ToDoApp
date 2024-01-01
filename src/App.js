@@ -8,7 +8,7 @@ const App = () => {
   const [todos, setTodos] = useState([]);
 
   const addTodo = (newTodo) => {
-    setTodos([...todos, newTodo]);
+    setTodos([todos, newTodo]);
   };
 
   return (
