@@ -84,18 +84,11 @@
   height: auto;
 }
 
-@media (max-width: 500px) {
-  .containerLeft,
-  .containerRight {
-    width: 100%;
-  }
+.containerRight {
+  display: none;
+}
 
-  .containerRight {
-    display: none;
-  }
-
-  .innerContainer {
-    padding: 20px;
-    width: 100%;
-  }
+.innerContainer {
+  padding: 20px;
+  width: 100%;
 }

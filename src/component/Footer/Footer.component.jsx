@@ -1,22 +1,21 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { SiReact } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className={styles.Footer}>
-      <div className={styles.container}>
-        <p className={styles.footerText}>
-          <b>
-            Made with{" "}
-            <span role="img" aria-label="heart">
-              ❤️
-            </span>{" "}
-            To-Do App
-          </b>
-          .
-        </p>
-      </div>
-    </footer>
+    <React.Fragment>
+      <footer className={styles.Footer}>
+        <div className={styles.container}>
+          <p className={styles.footerText}>
+            <b>
+              Made with <SiReact className={styles.reactIcon} /> React To-Do App
+            </b>
+            .
+          </p>
+        </div>
+      </footer>
+    </React.Fragment>
   );
 };
 
