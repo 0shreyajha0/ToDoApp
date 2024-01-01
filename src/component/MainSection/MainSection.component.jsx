@@ -2,22 +2,13 @@ import React, { useState, useEffect } from "react";
 import styles from "./MainSection.module.css";
 import Card from "../Card";
 
-class Todo {
-  constructor(title, content) {
-    this.title = title;
-    this.content = content;
-  }
-}
-
 const MainSection = () => {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    const storedTodos = JSON.parse(localStorage.getItem("todos")) || [];
-    const todoObjects = storedTodos.map(
-      (todo) => new Todo(todo.title, todo.content)
-    );
-    setTodos(todoObjects);
+    let storedTodos = JSON.parse(localStorage.getItem("todos")) || [];
+    storedTodos = Array.isArray(storedTodos) ? storedTodos : [];
+    setTodos(storedTodos);
   }, []);
 
   const todoCards = todos.map((todo, index) => (

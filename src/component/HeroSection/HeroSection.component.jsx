@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./HeroSection.module.css";
+import todologo from "../../Assets/images/todologo.png";
 
 const HeroSection = () => {
   const formSubmitHandler = (formValues) => {
@@ -7,7 +8,15 @@ const HeroSection = () => {
     const title = formValues.target[0].value;
     const content = formValues.target[1].value;
     const newTodo = { title: title, content: content };
-    localStorage.setItem("toDo", JSON.stringify(newTodo));
+
+    let existingTodos = JSON.parse(localStorage.getItem("todos")) || {};
+    existingTodos = Array.isArray(existingTodos)
+      ? existingTodos
+      : [existingTodos];
+    existingTodos.push(newTodo);
+    console.log(typeof existingTodos);
+
+    localStorage.setItem("todos", JSON.stringify(existingTodos));
   };
 
   return (
@@ -39,6 +48,15 @@ const HeroSection = () => {
                 Submit
               </button>
             </form>
+          </div>
+        </div>
+        <div className={styles.containerRight}>
+          <div className={styles.innercontainer}>
+            <img
+              src={todologo}
+              alt="Logo for ToDo List"
+              className={styles.image}
+            />
           </div>
         </div>
       </section>

@@ -20,7 +20,12 @@
   justify-content: center;
   align-items: center;
 }
-
+.containerLeft {
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .innerContainer {
   padding: 40px;
   background-color: #444;

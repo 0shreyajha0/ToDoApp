@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import Header from "./Header";
-import HeroSection from "./HeroSection";
-import MainSection from "./MainSection";
-import Footer from "./Footer";
+import Header from "./component/Header";
+import HeroSection from "./component/HeroSection";
+import MainSection from "./component/MainSection";
+import Footer from "./component/Footer";
 
 const App = () => {
   const [todos, setTodos] = useState([]);
 
   const addTodo = (newTodo) => {
-    setTodos([todos, newTodo]);
+    setTodos([...todos, newTodo]);
   };
 
   return (
-    <div className="App">
+    <div>
       <Header />
       <HeroSection addTodo={addTodo} />
       <MainSection todos={todos} />
