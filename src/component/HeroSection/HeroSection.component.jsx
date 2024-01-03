@@ -54,7 +54,7 @@ const HeroSection = () => {
           <div className={styles.innercontainer}>
             <img
               src={todologo}
-              alt="Logo for ToDo List"
+              alt="Image for ToDo List"
               className={styles.image}
             />
           </div>
