@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Header.module.css";
 import todologo from "../../Assets/images/todologo.png";
 
-const Header = () => {
+let Header = () => {
   return (
     <React.Fragment>
       <header className={styles.Header}>

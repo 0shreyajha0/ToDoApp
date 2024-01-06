@@ -4,10 +4,10 @@ import HeroSection from "./component/HeroSection";
 import MainSection from "./component/MainSection";
 import Footer from "./component/Footer";
 
-const App = () => {
-  const [todos, setTodos] = useState([]);
+let App = () => {
+  let [todos, setTodos] = useState([]);
 
-  const addTodo = (newTodo) => {
+  let addTodo = (newTodo) => {
     setTodos([...todos, newTodo]);
   };
 

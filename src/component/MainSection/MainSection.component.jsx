@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import styles from "./MainSection.module.css";
 import Card from "../Card";
 
-const MainSection = () => {
-  const [todos, setTodos] = useState([]);
+let MainSection = () => {
+  let [todos, setTodos] = useState([]);
 
   useEffect(() => {
     let storedTodos = JSON.parse(localStorage.getItem("todos")) || [];
@@ -11,7 +11,7 @@ const MainSection = () => {
     setTodos(storedTodos);
   }, []);
 
-  const todoCards = todos.map((todo, index) => (
+  let todoCards = todos.map((todo, index) => (
     <li key={index} className={styles.card}>
       <Card>
         <div className={styles.cardContent}>

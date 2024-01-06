@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Footer.module.css";
 import { SiReact } from "react-icons/si";
 
-const Footer = () => {
+let Footer = () => {
   return (
     <React.Fragment>
       <footer className={styles.Footer}>

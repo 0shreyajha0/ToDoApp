@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./HeroSection.module.css";
 import todologo from "../../Assets/images/todologo.png";
 
-const HeroSection = () => {
-  const formSubmitHandler = (formValues) => {
+let HeroSection = () => {
+  let formSubmitHandler = (formValues) => {
     formValues.preventDefault();
-    const title = formValues.target[0].value;
-    const content = formValues.target[1].value;
-    const newTodo = { title: title, content: content };
+    let title = formValues.target[0].value;
+    let content = formValues.target[1].value;
+    let newTodo = { title: title, content: content };
 
     let existingTodos = JSON.parse(localStorage.getItem("todos")) || {};
     existingTodos = Array.isArray(existingTodos)
